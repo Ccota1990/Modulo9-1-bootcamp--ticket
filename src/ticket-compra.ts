@@ -2,6 +2,7 @@ import {
   tasaIva,
   LineaTicket,
   TicketFinal,
+  productos,
 } from "./modelo";
 
 export const calculaTicket = (lineasTicket: LineaTicket[]): TicketFinal => {
@@ -44,3 +45,5 @@ export const calculaTicket = (lineasTicket: LineaTicket[]): TicketFinal => {
   return resultado;
 };
 
+const ticket = calculaTicket(productos);
+console.log(ticket)
